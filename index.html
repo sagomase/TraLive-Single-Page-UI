@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>TraLive</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/all.js"></script>
+</head>
+
+<body>
+    <div class="continer-fluid border border-0">
+        <div class="header">
+
+            <div class="row">
+                <div class="col-12 col-sm-4 col-md-4 col-lg-4 p-4 text-left">
+                    <img src="images/worldmap.png" class="img-fluid" alt="Image Not Found" width="50" height="50">
+                    <h1 class="h1_mar">TraLive</h1>
+                </div>
+
+                <div class="col-12 col-sm-8 p-2 text-right">
+                    <nav class="navbar navbar-expand-md navbar-light">
+                        <a class="navbar-brand" href="#"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Home</a>
+                                </li>
+
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">About</a>
+                                </li>
+
+
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Flights</a>
+                                </li>
+
+                                <li class="nav-item dropdown active">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Facility
+        </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" href="#">Hotel</a>
+                                        <a class="dropdown-item" href="#">Car</a>
+                                        <a class="dropdown-item" href="#">Flights</a>
+                                    </div>
+                                </li>
+
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Blog</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!--end of row-->
+
+            <div class="background">
+                <div class="row">
+                    <div class="col-sm-5 col-md-5 col-lg-5 p-5">
+                        <button class="tablink" onclick="openPage('Flight', this, '#763028')" id="defaultOpen">Flight</button>
+                        <button class="tablink" onclick="openPage('Hotels', this, '#763028')">Hotels</button>
+                        <button class="tablink" onclick="openPage('Packages', this, '#763028')">Packages</button>
+
+                        <div id="Flight" class="tabcontent">
+                            <form method="post">
+                                <table>
+                                    <tr>
+                                        <td><label>Form:</label></td>
+                                        <td><input class="size" type="text" name="" placeholder=""></td>
+                                    </tr>
+                                    <div class="w-100"></div>
+                                    <tr>
+                                        <td><label>To:</label></td>
+                                        <td><input class="size" type="text" name="" placeholder=""></td>
+                                    </tr>
+
+                                    <div class="w-100"></div>
+                                    <tr>
+                                        <td><label>Check In:</label></td>
+                                        <td>
+                                            <p><input class="size" type="date" id="datepicker" placeholder=""></p>
+                                        </td>
+                                    </tr>
+                                    <div class="w-100"></div>
+                                    <tr>
+                                        <td>
+                                            <lable>Check Out:</lable>
+                                        </td>
+                                        <td><input class="size" type="date" id="datepicker" placeholder=""></td>
+                                    </tr>
+                                    <div class="w-100"></div>
+                                    <tr>
+                                        <td><label for="salutation">Class:</label></td>
+                                        <td><select class="size" name="salutation" id="salutation">
+                <option disabled selected>Economy</option>
+                <option>Economy</option>
+                <option>First</option>
+                <option>Business</option></select></td>
+                                    </tr>
+                                    <div class="w-100"></div>
+                                    <tr>
+                                        <td><label for="number">Adult:</label>
+                                            <td><select class="size" name="number" id="number">
+                <option>1</option>
+                <option selected="selected">2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option></select></td>
+                                    </tr>
+                                    <div class="w-100"></div>
+                                    <tr>
+                                        <td><label for="number">Children:</label>
+                                            <td><select class="size" name="number" id="number">
+                 <option selected="selected">1</option>
+                 <option>2</option>
+                 <option>3</option>
+                 <option>4</option>
+                 <option>5</option>
+                 <option>6</option>
+                 <option>7</option></select></td>
+                                    </tr>
+                                </table>
+                                <input type="submit" value="Submit" class="button">
+                            </form>
+                        </div>
+
+                        <div id="Hotels" class="tabcontent">
+                            <form method="post">
+                                <table>
+                                    <tr>
+                                        <td><label>City:</label></td>
+                                        <td><input class="size" type="text" name=""></td>
+                                    </tr>
+                                    <div class="w-100"></div>
+                                    <tr>
+                                        <td><label>Return:</label></td>
+                                        <td>
+                                            <p><input class="size" type="date" id="datepicker" placeholder=""></p>
+                                        </td>
+                                    </tr>
+                                    <div class="w-100"></div>
+                                    <tr>
+                                        <td><label>Check Out:</label></td>
+                                        <td>
+                                            <p><input class="size" type="date" id="datepicker" placeholder=""></p>
+                                        </td>
+                                    </tr>
+                                    <div class="w-100"></div>
+                                    <tr>
+                                        <td><label for="number">Room:</label></td>
+                                        <td> <select class="size" name="number" id="number">
+      <option selected="selected">1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>
+      <option>7</option>
+    </select></td>
+                                    </tr>
+                                    <div class="w-100"></div>
+                                    <tr>
+                                        <td> <label for="number">Adult:</label></td>
+                                        <td><select class="size" name="number" id="number">
+      <option selected="selected">1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>
+      <option>7</option>
+    </select></td>
+                                    </tr>
+                                    <div class="w-100"></div>
+                                    <tr>
+                                        <td><label for="number">Children:</label></td>
+                                        <td> <select class="size" name="number" id="number">
+      <option selected="selected">1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>
+      <option>7</option>
+    </select></td>
+                                    </tr>
+
+                                </table>
+                                <input type="submit" name="" class="button">
+                            </form>
+                        </div>
+
+                        <div id="Packages" class="tabcontent">
+                            <form method="post">
+                                <table>
+                                    <tr>
+                                        <td><label id="city">City:</label></td>
+                                        <td><input class="size" type="text" name=""></td>
+                                    </tr>
+                                    <div class="w-100"></div>
+                                    <tr>
+                                        <td><label id="destination">Destination:</label></td>
+                                        <td><input class="size" type="text" name=""></td>
+                                    </tr>
+                                    <div class="w-100"></div>
+                                    <tr>
+                                        <td><label>Departs:</label></td>
+                                        <td>
+                                            <p><input class="size" type="date" id="datepicker" placeholder=""></p>
+                                        </td>
+                                    </tr>
+                                    <div class="w-100"></div>
+                                    <tr>
+                                        <td><label>Return:</label></td>
+                                        <td>
+                                            <p><input class="size" type="date" id="datepicker" placeholder=""></p>
+                                        </td>
+                                    </tr>
+                                    <div class="w-100"></div>
+                                    <tr>
+                                        <td><label for="number">Room:</label></td>
+                                        <td><select class="size" name="number" id="number">
+      <option selected="selected">1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>
+      <option>7</option>
+    </select></td>
+                                    </tr>
+                                    <div class="w-100"></div>
+                                    <tr>
+                                        <td> <label for="number">Adult:</label></td>
+                                        <td> <select class="size" name="number" id="number">
+      <option selected="selected">1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>
+      <option>7</option>
+    </select></td>
+                                    </tr>
+                                    <div class="w-100"></div>
+                                    <tr>
+                                        <td> <label for="number">Children:</label></td>
+                                        <td> <select class="size" name="number" id="number">
+      <option selected="selected">1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>
+      <option>7</option>
+    </select></td>
+                                    </tr>
+                                </table>
+                                <input type="submit" name="" class="button">
+                            </form>
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-12 col-md-6 col-lg-6 offset-1 text-left p-2">
+                        <h2 class="heading">Exclusive Limited Time Offer</h2>
+                        <p id="text">Fly to Hong Kong via Los Angeles, USA <span>$599</span></p>
+                    </div>
+                </div>
+            </div>
+            <!--end of background-->
+
+
+            <div class="text-center start col-sm col-md col-lg p-4">
+                <h2 class="title">Tours</h2>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                <hr class="line">
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img src="images/img11.jpg" style="width:100%;height:12em">
+                        <h3>New York</h3>
+                        <h4>3 nights + Flight 5*Hotel
+                            <div class="w-100">$1,000</div>
+                        </h4>
+                        <form>
+                            <button type="button" class="btn text-center">Book Now</button>
+                        </form>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <img src="images/img12.jpg" style="width:100%;height:12em">
+                        <h3>Philippines</h3>
+                        <h4>2 nights + Flight 5*Hotel
+                            <div class="w-100">$1.5,000</div>
+                        </h4>
+                        <form>
+                            <button type="button" class="btn">Book Now</button>
+                        </form>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <img src="images/img13.jpg" style="width:100%;height:12em">
+                        <h3>Hongkong</h3>
+                        <h4>4 nights + Flight 5*Hotel
+                            <div class="w-100">$2,000</div>
+                        </h4>
+                        <form>
+                            <button type="button" class="btn">Book Now</button>
+                        </form>
+                    </div>
+                </div>
+
+                <form>
+                    <button type="button" class="btnstart">SEE ALL OFFERS</button>
+                </form>
+                <div class="w-100"></div>
+            </div>
+
+            <div class="text-center second p-4 col-sm col-md col-lg">
+                <div class="row">
+
+                    <div class="col-sm-4">
+                        <img src="images/iconsfamily.png" alt="image not found">
+                        <h3>Family Travel</h3>
+                        <p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
+                        <form>
+                            <button type="button" class="btn">Learn More</button>
+                        </form>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <img src="images/iconsplanning.png" alt="image not found">
+                        <h3>Travel Plans</h3>
+                        <p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
+                        <form>
+                            <button type="button" class="btn">Learn More</button>
+                        </form>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <img src="images/iconsh-50.png" alt="image not found">
+                        <h3>Honeymoon</h3>
+                        <p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
+                        <form>
+                            <button type="button" class="btn">Learn More</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="text-center three p-4 col-sm col-md col-lg">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img src="images/iconsbussiness.png" alt="image not found">
+                        <h3>Business Travel</h3>
+                        <p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
+                        <form>
+                            <button type="button" class="btn">Learn More</button>
+                        </form>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="images/iconsmusic.png" alt="image not found">
+                        <h3>Solo Travel</h3>
+                        <p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
+                        <form>
+                            <button type="button" class="btn">Learn More</button>
+                        </form>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="images/iconsexplorer.png" alt="image not found">
+                        <h3>Explorer</h3>
+                        <p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
+                        <form>
+                            <button type="button" class="btn">Learn More</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center four p-4 col-sm col-md col-lg">
+                <h2 class="title">Most Popular Destinations</h2>
+                <form>
+                    <button type="button" class="btnfour text-center">VIEW ALL DESTINATIONS</button>
+                </form>
+                <hr class="line">
+
+                <div class="row">
+
+                    <div class="col-sm-4 img">
+                        <img src="images/japan.png" class="img-responsive" style="width:100%;height:15em" alt="Image">
+                        <div class="figcaption" style="width:100%;height:15em">
+                            <div>
+                                <h2>Japan</h2>
+                            </div>
+                            <div>
+                                <p>It’s about the journey.</p>
+                            </div>
+                        </div>
+                        <a href="#"></a>
+                    </div>
+
+                    <div class="col-sm-4 img">
+                        <img src="images/new_yark.png" class="img-responsive" style="width:100%;height:15em" alt="Image">
+                        <div class="figcaption" style="width:100%;height:15em">
+                            <div>
+                                <h2>Maldives</h2>
+                            </div>
+                            <div>
+                                <p>It’s about the journey.</p>
+                            </div>
+                        </div>
+                        <a href="#"></a>
+                    </div>
+
+                    <div class="col-sm-4 img">
+                        <img src="images/paris.png" class="img-responsive" style="width:100%;height:15em" alt="Image">
+                        <div class="figcaption" style="width:100%;height:15em">
+                            <div>
+                                <h2>Philippines</h2>
+                            </div>
+                            <div>
+                                <p>It’s about the journey.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 img">
+                        <img src="images/canada.png" class="img-responsive" style="width:100%;height:15em" alt="Image">
+                        <div class="figcaption" style="width:100%;height:15em">
+                            <div>
+                                <h2>Canada</h2>
+                            </div>
+                            <div>
+                                <p>It’s about the journey.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 img">
+                        <img src="images/cana.png" class="img-responsive" style="width:100%;height:15em" alt="Image">
+                        <div class="figcaption" style="width:100%;height:15em">
+                            <div>
+                                <h2>France</h2>
+                            </div>
+                            <div>
+                                <p>It’s about the journey.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 img">
+                        <img src="images/maldiv.png" class="img-responsive" style="width:100%;height:15em" alt="Image">
+                        <div class="figcaption" style="width:100%;height:15em">
+                            <div>
+                                <h2>Maldives</h2>
+                            </div>
+                            <div>
+                                <p>It’s about the journey.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 img">
+                        <img src="images/swizarland.png" class="img-responsive" style="width:100%;height:15em" alt="Image">
+                        <div class="figcaption" style="width:100%;height:15em">
+                            <div>
+                                <h2>Spain</h2>
+                            </div>
+                            <div>
+                                <p>It’s about the journey.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 img">
+                        <img src="images/thailand.png" class="img-responsive" style="width:100%;height:15em" alt="Image">
+                        <div class="figcaption" style="width:100%;height:15em">
+                            <div>
+                                <h2>Thailand</h2>
+                            </div>
+                            <div>
+                                <p>It’s about the journey.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 img">
+                        <img src="images/singapur.png" class="img-responsive" style="width:100%;height:15em" alt="Image">
+                        <div class="figcaption" style="width:100%;height:15em">
+                            <div>
+                                <h2>Brazil</h2>
+                            </div>
+                            <div>
+                                <p>It’s about the journey.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="text-center five col-sm col-md col-lg p-4">
+                <h2 class="title">Recent From Blog</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores, perspiciatis accusamus asperiores sint consequuntur debitis.</p>
+                <hr class="line">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="imeffect"><img src="images/maldiv44.png" style="width:100%;height:12em"></div>
+                        <h4>Around the world.</h4>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                        <form>
+                            <button type="button" class="btn">Learn More</button>
+                        </form>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="imeffect"><img src="images/bali55.png" style="width:100%;height:12em"></div>
+                        <h4>Planning for Vacation.</h4>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                        <form>
+                            <button type="button" class="btn">Learn More</button>
+                        </form>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="imeffect"><img src="images/tokeyo.png" style="width:100%;height:12em"></div>
+                        <h4>Visit Tokyo Japan.</h4>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                        <form>
+                            <button type="button" class="btn">Learn More</button>
+                        </form>
+                    </div>
+                </div>
+                <form>
+                    <button type="button" class="btn btn-outline-primary">SEE ALL POST</button>
+                </form>
+            </div>
+
+            <div class="text-center six p-4 col-sm col-md col-lg">
+                <h2>Happy Clients</h2>
+                <hr class="line">
+                <div class="row">
+                    <div class="col-sm-4 last" style="width:100%;height:15em">
+                        <div class="round"><img src="images/person2.jpg"></div>
+                        <p>“Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.a large language ocean.”</p>
+                    </div>
+
+                    <div class="col-sm-4 last" style="width:100%;height:15em">
+                        <div class="round"><img src="images/person3.jpeg"></div>
+                        <p>“Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.a large language ocean.”</p>
+                    </div>
+
+
+                    <div class="col-sm-4 last" style="width:100%;height:15em">
+                        <div class="round"><img src="images/person5.jpg"></div>
+                        <p>“Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.a large language ocean.”</p>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-sm-4 seven">
+                        <h4>Steffin, Founder</h4>
+                    </div>
+
+                    <div class="col-sm-4 seven">
+                        <h4>Ravina Doe, CEO </h4>
+                    </div>
+
+                    <div class="col-sm-4 seven">
+                        <h4>Hugo, CEO</h4>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="text-center list p-4 col-sm col-md col-lg">
+                <div class="row">
+
+                    <div class="col-sm-3">
+                        <ul class="list-group">
+                            <li class="list-group-item bold">Top Flights Routes</li>
+                            <li class="list-group-item">Manila flights</li>
+                            <li class="list-group-item">Dubai flights</li>
+                            <li class="list-group-item">Bangkok flights</li>
+                            <li class="list-group-item">Tokyo Flight</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <ul class="list-group">
+                            <li class="list-group-item bold">Top Hotels</li>
+                            <li class="list-group-item">Boracay Hotel</li>
+                            <li class="list-group-item">Dubai Hotel</li>
+                            <li class="list-group-item">Singapore Hotel</li>
+                            <li class="list-group-item">Manila Hotel</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <ul class="list-group">
+                            <li class="list-group-item bold">Interest</li>
+                            <li class="list-group-item">Beaches</li>
+                            <li class="list-group-item">Family Travel</li>
+                            <li class="list-group-item">Budget Travel</li>
+                            <li class="list-group-item">Food & Drink</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <ul class="list-group">
+                            <li class="list-group-item bold">Best Places</li>
+                            <li class="list-group-item">Boracay Beach</li>
+                            <li class="list-group-item">Dubai</li>
+                            <li class="list-group-item">Singapore</li>
+                            <li class="list-group-item">Hongkong</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="text-center footer p-5 col-sm col-md col-lg">
+                <p id="icons"><i class="fab fa-twitter" style="width:3%; height:3%"></i>
+                    <i class="fab fa-facebook-f" style="width:2%; height:2%"></i>
+                    <i class="fab fa-instagram" style="width:3%; height:3%"></i>
+                    <i class="fab fa-youtube" style="width:4%; height:4%"></i>
+                    <i class="fab fa-google" style="width:3%; height:3%"></i>
+                </p>
+
+            </footer>
+        </div>
+        <!--end of container-->
+</body>
+
+<script>
+    function openPage(pageName, elmnt, color) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+        }
+        document.getElementById(pageName).style.display = "block";
+        elmnt.style.backgroundColor = color;
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" href="js/jquery-ui.css">
+<script>
+    $(function() {
+                $(function() {
+                    $("#datepicker").datepicker();
+                    $("#datepicker").datepicker("option", "showAnim", "clip");
+                });
+</script>
+
+</html>

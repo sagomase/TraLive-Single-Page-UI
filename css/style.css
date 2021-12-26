@@ -1,0 +1,403 @@
+.h1_mar {
+    margin: -14% 0 0 20%;
+    color: #851A0D;
+    font-family: Cooper Std;
+}
+
+.navbar-nav {
+    margin: 0% 0 0 25%;
+}
+
+.nav-item {
+    margin: 4% 0 0 4%;
+}
+
+.nav-item:hover {
+    border-bottom: 1px solid #851A0D;
+}
+
+.nav-item a:hover {
+    color: white;
+}
+
+.background {
+    background: linear-gradient(rgb(46 43 43 / 80%), rgb(161 89 89 / 0%)), url(../images/bg1.jpg);
+    background-size: 100% 100%;
+}
+
+.heading {
+    font-size: 2.9em;
+    margin: 10% 0 0 0;
+    color: #851A0D;
+    text-shadow: 2px 2px 10px #ffeded;
+    font-family: 'Dancing Script', cursive;
+}
+
+#text {
+    font-size: 1.7em;
+    margin: 0% 0 0 0;
+    color: #851A0D;
+    text-shadow: 2px 2px 10px #ffeded;
+    font-family: corbel;
+}
+
+#text span {
+    font-size: 2.8em;
+}
+
+.tablink {
+    font-family: corbel;
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 10px;
+    font-size: 18px;
+    width: 30%;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 60px 10px;
+    height: 100%;
+    font-family: corbel;
+}
+
+#Flight {
+    background: linear-gradient(#393e46, rgba(0, 0, 0, 0.2))
+}
+
+#Hotels {
+    background: linear-gradient(#393e46, rgba(0, 0, 0, 0.2))
+}
+
+#Packages {
+    background: linear-gradient(#393e46, rgba(0, 0, 0, 0.2))
+}
+
+.size {
+    width: 10em;
+    height: 2em;
+    border: 1px solid black;
+}
+
+.button {
+    margin: 10% 0 0 29%;
+    padding: 5px 40px 5px 40px;
+    font-family: corbel;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    border: 1px solid white;
+    color: white;
+}
+
+.button:hover {
+    background-color: #851A0D;
+    border: 1px solid #851A0D;
+}
+
+.title {
+    font-size: 2em;
+    font-family: 'Dancing Script', cursive;
+    color: rgb(250, 242, 242);
+    font-weight: bold;
+}
+
+.line {
+    width: 30%;
+    height: 60%;
+    background-color: #851A0D;
+}
+
+.start {
+    font-family: corbel;
+}
+
+.start img {
+    border: 2px solid black;
+    box-shadow: 2px 2px 5px black;
+}
+
+.start h3 {
+    margin: 5% 0 0 0;
+    font-weight: bold;
+    font-family: Tekton Pro;
+}
+
+.second {
+    font-family: corbel;
+}
+
+.second h3 {
+    margin: 5% 0 0 0;
+    font-weight: bold;
+    font-family: Tekton Pro;
+}
+
+.btn {
+    border-radius: 20px 5px 20px 5px;
+    border: 1px solid #851A0D;
+    color: #851A0D;
+    font-family: corbel;
+    margin: 2% 0 0 0;
+}
+
+.btn:hover {
+    background: linear-gradient(rgba(95, 61, 38, 0.9), rgba(92, 63, 45, 0.9));
+    border: 1px solid #68160c;
+    color: white;
+}
+
+.btnstart {
+    border-radius: 20px 5px 20px 5px;
+    border: 1px solid #851A0D;
+    color: #851A0D;
+    margin: 5% 0 0 0%;
+    padding: 8px 25px 8px 25px;
+    font-family: corbel;
+    background: white;
+}
+
+.btnstart:hover {
+    background: linear-gradient(rgba(95, 61, 38, 0.9), rgba(92, 63, 45, 0.9));
+    border: 1px solid #851A0D;
+    color: white;
+}
+
+.three {
+    font-family: corbel;
+}
+
+.three h3 {
+    margin: 5% 0 0 0;
+    font-weight: bold;
+    font-family: Tekton Pro;
+}
+
+.four {
+    font-family: corbel;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url(../images/bg2.jpg);
+    background-size: 100% 100%;
+}
+
+.btnfour {
+    border-radius: 20px 5px 20px 5px;
+    border: 1px solid wheat;
+    color: rgb(233, 227, 227);
+    margin: 2% 0 0 0%;
+    padding: 8px 25px 8px 25px;
+    font-family: corbel;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5));
+}
+
+.btnfour:hover {
+    background: linear-gradient(rgba(95, 61, 38, 0.9), rgba(92, 63, 45, 0.9));
+    border: 1px solid #851A0D;
+    color: white;
+}
+
+.img {
+    margin: 2% 0 5% 0;
+    opacity: 1;
+    transition: opacity 0.35s;
+    font-family: sans-serif;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.img .figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: left;
+}
+
+.img .figcaption>div {
+    float: left;
+    height: 100%;
+    overflow: hidden;
+    width: 50%;
+    position: relative;
+}
+
+.img .figcaption::before {
+    position: absolute;
+    top: 40%;
+    bottom: 40%;
+    left: 20%;
+    content: '';
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0);
+    transition: all 0.4s;
+    transition-delay: 0.6s;
+}
+
+.img .figcaption h2,
+.img .figcaption p {
+    margin: 0;
+    padding: 40px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    font-size: 1.5em;
+    transition: opacity 0.45s, -moz-transform 0.45s, -o-transform 0.45s, transform 0.45s;
+}
+
+.img .figcaption h2 {
+    text-align: right;
+    word-spacing: -0.1em;
+    font-weight: lighter;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transform: translate3d(50%, 0%, 0);
+    transition-delay: 0s;
+}
+
+.img .figcaption p {
+    display: block;
+    bottom: 0;
+    text-align: left;
+    font-weight: lighter;
+    top: 0%;
+    color: #000;
+    background: #ffffff;
+    transform: translate3d(-50%, 0%, 0);
+    transition-delay: 0s;
+}
+
+.img .figcaption a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    color: #ffffff;
+}
+
+.img:hover img {
+    opacity: 0.7;
+}
+
+.img:hover .figcaption h2,
+.img:hover .figcaption p {
+    transform: translate3d(0%, 0%, 0);
+    transition-delay: 0.3s;
+}
+
+.img:hover .figcaption h2 {
+    opacity: 1;
+}
+
+.img:hover .figcaption p {
+    opacity: 1;
+}
+
+.img:hover .figcaption::before {
+    background: #ffffff;
+    top: 0px;
+    bottom: 0px;
+    opacity: 1;
+    transition-delay: 0s;
+}
+
+.five {
+    font-family: corbel;
+}
+
+.five h4 {
+    margin: 5% 0 0 0;
+    font-weight: bold;
+    font-family: Tekton Pro;
+    font-size: 1.5em;
+}
+
+.imeffect:hover img {
+    transform: scale(0.8, 0.8);
+    transition: 1s;
+}
+
+.six {
+    font-family: corbel;
+    background-color: #393e46;
+}
+
+.six h2 {
+    color: white;
+    font-size: 2em;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+}
+
+.six .round {
+    border: 1px solid #393e46;
+    border-radius: 100%;
+    width: 6em;
+    height: 6em;
+    background-color: #393e46;
+    margin: 3% 0 0 32%;
+}
+
+.six .round img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.last {
+    border: 1px solid #393e46;
+    background-color: white;
+    clip-path: polygon(0 80%, 0 0, 100% 0, 100% 80%, 50% 100%);
+    margin: 2% 0 0 0;
+    z-index: 1;
+}
+
+.seven h4 {
+    color: white;
+}
+
+.list {
+    background-color: black;
+}
+
+.list-group-item {
+    background-color: black;
+    color: #7b7f7e;
+}
+
+.bold {
+    font-style: italic;
+    color: white;
+    font-size: 1.2em;
+}
+
+.footer {
+    margin: 0% 0 0% 0;
+}
+
+#icons .fa-twitter:hover,
+#icons .fa-facebook-f:hover,
+#icons .fa-instagram:hover,
+#icons .fa-youtube:hover,
+#icons .fa-google:hover {
+    color: #851A0D;
+}
+
+.footer h5 {
+    font-size: 1.2em;
+    margin: 0 0 0% 0;
+    color: black;
+}
+
+.footer h5 span {
+    color: #851A0D;
+}
